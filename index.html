@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="ONA.jpg">
+    <link rel="stylesheet" href="home.css">
+    <link href="aos/aos.css" rel="stylesheet">
+    <!-- Google Fonts Poppins & Outfit for a highly professional UI -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>O.N.A JIJEL - Office National de l'Assainissement</title>
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#home" class="logo-area">
+                <img src="ONA.jpg" alt="ONA Logo" class="logo-img">
+                <span class="logo-text"><span class="highlight">O</span>.N.<span class="highlight">A</span> JIJEL</span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Accueil</a></li>
+                    <li><a href="#services" class="nav-link">Nos Services</a></li>
+                    <li><a href="#centres" class="nav-link">Centres</a></li>
+                    <li><a href="#stations" class="nav-link">Stations</a></li>
+                    <li><a href="#contact" class="nav-link">Contacts</a></li>
+                </ul>
+            </nav>
+
+            <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-container">
+                <div class="hero-badge" data-aos="fade-down" data-aos-duration="1000">
+                    Établissement Public à Caractère Industriel et Commercial
+                </div>
+                <h1 class="hero-title" data-aos="fade-up" data-aos-duration="1200">
+                    <span class="letter-accent">O</span>ffice <span class="letter-accent">N</span>ational de l'<span class="letter-accent">A</span>ssainissement
+                </h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
+                    Acteur majeur de la préservation de l'environnement, de la santé publique et du développement durable en Algérie.
+                </p>
+                
+                <div class="hero-content-box" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1000">
+                    <p class="hero-text">
+                        L'Office National de l'Assainissement (ONA) est chargé de la gestion, de l'exploitation et de l'amélioration des infrastructures d'assainissement et de traitement des eaux usées à travers le pays. Créé en 2002, cet organisme a pour mission principale d'assurer l'évacuation, le traitement et la valorisation des eaux usées, ainsi que la lutte contre la pollution hydrique.
+                    </p>
+                    <p class="hero-text hide-on-mobile">
+                        L'ONA joue un rôle crucial dans la prévention des risques sanitaires et la protection des ressources en eau, en gérant des stations d'épuration modernes et en sensibilisant les citoyens aux enjeux de l'économie de l'eau et de l'assainissement respectueux de la nature.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#services" class="btn btn-primary">Découvrir nos services</a>
+                        <a href="#centres" class="btn btn-outline">Nos centres locaux</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section (Integrated from about.html) -->
+        <section id="services" class="services-section">
+            <div class="section-container">
+                <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+                    <span class="section-subtitle">Ce que nous faisons</span>
+                    <h2 class="section-title">Nos <span class="text-accent">Services</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <article class="service-card" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="card-image-wrapper">
+                            <img src="IMG7.jpg" alt="Nettoyage des trottoirs" class="service-img">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="service-info">
+                            <h3 class="service-title">Nettoyage des trottoirs</h3>
+                            <p class="service-excerpt">Maintien de la propreté urbaine et sécurisation des espaces piétons.</p>
+                            <div class="accordion-content" id="service-desc-1">
+                                <p class="service-full-text">Nous offrons des services de nettoyage des trottoirs pour assurer la propreté et la sécurité. Nos équipes sont équipées pour gérer tous les types de débris et saletés, contribuant ainsi à un cadre de vie sain.</p>
+                            </div>
+                            <button class="btn-more" onclick="toggleService(1)">
+                                <span class="btn-text">Plus...</span>
+                                <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Service 2 -->
+                    <article class="service-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                        <div class="card-image-wrapper">
+                            <img src="IMG8.jpg" alt="Approvisionnement en eau" class="service-img">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="service-info">
+                            <h3 class="service-title">Approvisionnement en eau</h3>
+                            <p class="service-excerpt">Solutions de forage et distribution d'eau potable adaptées.</p>
+                            <div class="accordion-content" id="service-desc-2">
+                                <p class="service-full-text">Nous fournissons des services de forage et d'approvisionnement en eau pour répondre aux besoins en eau potable. Nos solutions sont adaptées à divers environnements et exigences.</p>
+                            </div>
+                            <button class="btn-more" onclick="toggleService(2)">
+                                <span class="btn-text">Plus...</span>
+                                <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Service 3 -->
+                    <article class="service-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="card-image-wrapper">
+                            <img src="IMG9.jpg" alt="Élimination des eaux usées" class="service-img">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="service-info">
+                            <h3 class="service-title">Traitement des eaux usées</h3>
+                            <p class="service-excerpt">Traitement et assainissement pour la préservation écologique.</p>
+                            <div class="accordion-content" id="service-desc-3">
+                                <p class="service-full-text">Nous offrons des services de traitement et d'élimination des eaux usées pour protéger l'environnement. Nos solutions sont efficaces et respectueuses des normes écologiques en vigueur.</p>
+                            </div>
+                            <button class="btn-more" onclick="toggleService(3)">
+                                <span class="btn-text">Plus...</span>
+                                <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Service 4 -->
+                    <article class="service-card" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="card-image-wrapper">
+                            <img src="IMG10.jpg" alt="Gestion des déchets" class="service-img">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="service-info">
+                            <h3 class="service-title">Gestion des déchets</h3>
+                            <p class="service-excerpt">Collecte, tri sélectif et recyclage pour un environnement durable.</p>
+                            <div class="accordion-content" id="service-desc-4">
+                                <p class="service-full-text">Nous offrons des services complets de gestion des déchets pour maintenir un environnement propre et sain. Nos solutions incluent la collecte, le tri et le recyclage des déchets.</p>
+                            </div>
+                            <button class="btn-more" onclick="toggleService(4)">
+                                <span class="btn-text">Plus...</span>
+                                <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Service 5 -->
+                    <article class="service-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                        <div class="card-image-wrapper">
+                            <img src="IMG11.jpg" alt="Plantation d'arbres" class="service-img">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="service-info">
+                            <h3 class="service-title">Reboisement & Espaces Verts</h3>
+                            <p class="service-excerpt">Plantation d'arbres en milieu urbain pour rafraîchir nos cités.</p>
+                            <div class="accordion-content" id="service-desc-5">
+                                <p class="service-full-text">Cette photo montre un arbre nouvellement planté dans un environnement urbain, contribuant à la verdure, à la lutte contre la chaleur urbaine et à la beauté de la ville.</p>
+                            </div>
+                            <button class="btn-more" onclick="toggleService(5)">
+                                <span class="btn-text">Plus...</span>
+                                <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Service 6 -->
+                    <article class="service-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="card-image-wrapper">
+                            <img src="img5.jpg" alt="Nettoyage des plages" class="service-img">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="service-info">
+                            <h3 class="service-title">Nettoyage des plages</h3>
+                            <p class="service-excerpt">Entretien régulier du littoral pour un tourisme propre et sûr.</p>
+                            <div class="accordion-content" id="service-desc-6">
+                                <p class="service-full-text">Cette photo montre une plage propre et bien entretenue, prête à accueillir les visiteurs. Nos services de nettoyage garantissent un environnement sûr et agréable pour tous.</p>
+                            </div>
+                            <button class="btn-more" onclick="toggleService(6)">
+                                <span class="btn-text">Plus...</span>
+                                <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Centres d'assainissement Section -->
+        <section id="centres" class="centres-section">
+            <div class="section-container">
+                <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+                    <span class="section-subtitle">Notre couverture territoriale</span>
+                    <h2 class="section-title">Les Centres d'Assainissement</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="centres-grid">
+                    <!-- JIJEL -->
+                    <a href="https://maps.app.goo.gl/kxSY8wwHJyTY4J9JA" target="_blank" rel="noopener" class="centre-card-link" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="centre-card">
+                            <div class="centre-icon-box">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <h3 class="centre-name">JIJEL</h3>
+                            <p class="centre-desc">Ce secteur est situé dans le centre-ville de Jijel, à côté de la mairie et de Sonelgaz.</p>
+                            <span class="map-link-btn">Voir sur la carte →</span>
+                        </div>
+                    </a>
+
+                    <!-- TAHER -->
+                    <a href="https://maps.app.goo.gl/BzaLuQmyHWbG3j9z6" target="_blank" rel="noopener" class="centre-card-link" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="50">
+                        <div class="centre-card">
+                            <div class="centre-icon-box">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <h3 class="centre-name">TAHER</h3>
+                            <p class="centre-desc">Ce secteur est situé dans le centre-ville de Taher, du côté de Ouled Salah.</p>
+                            <span class="map-link-btn">Voir sur la carte →</span>
+                        </div>
+                    </a>
+
+                    <!-- EL MILIA -->
+                    <a href="https://maps.app.goo.gl/B6W5i7SJJg8sUxwd9" target="_blank" rel="noopener" class="centre-card-link" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+                        <div class="centre-card">
+                            <div class="centre-icon-box">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <h3 class="centre-name">EL MILIA</h3>
+                            <p class="centre-desc">Ce secteur est situé dans le centre-ville d'El Milia et à côté du grand stade.</p>
+                            <span class="map-link-btn">Voir sur la carte →</span>
+                        </div>
+                    </a>
+
+                    <!-- EL AOUANA -->
+                    <a href="https://maps.app.goo.gl/ayRmPJHNN1LCbLzZ9" target="_blank" rel="noopener" class="centre-card-link" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="150">
+                        <div class="centre-card">
+                            <div class="centre-icon-box">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <h3 class="centre-name">EL AOUANA</h3>
+                            <p class="centre-desc">Ce secteur est situé à El Aouana, plus précisément au niveau de Cavallo.</p>
+                            <span class="map-link-btn">Voir sur la carte →</span>
+                        </div>
+                    </a>
+
+                    <!-- EL ANCER -->
+                    <a href="https://maps.app.goo.gl/BxzUB9cB58at63pB8" target="_blank" rel="noopener" class="centre-card-link" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="centre-card">
+                            <div class="centre-icon-box">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <h3 class="centre-name">EL ANCER</h3>
+                            <p class="centre-desc">Ce secteur est situé à El Ancer, juste à côté de la grande mosquée.</p>
+                            <span class="map-link-btn">Voir sur la carte →</span>
+                        </div>
+                    </a>
+
+                    <!-- CHEKFA -->
+                    <a href="https://maps.app.goo.gl/giB4HAHK9umVFG7B9" target="_blank" rel="noopener" class="centre-card-link" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="250">
+                        <div class="centre-card">
+                            <div class="centre-icon-box">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <h3 class="centre-name">CHEKFA</h3>
+                            <p class="centre-desc">Ce secteur est situé dans la commune de Chekfa, à côté de la gare.</p>
+                            <span class="map-link-btn">Voir sur la carte →</span>
+                        </div>
+                    </a>
+
+                    <!-- TEXANA -->
+                    <a href="https://maps.app.goo.gl/7rJu6z4g5t2Ct7wQ9" target="_blank" rel="noopener" class="centre-card-link" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                        <div class="centre-card">
+                            <div class="centre-icon-box">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <h3 class="centre-name">TEXANA</h3>
+                            <p class="centre-desc">Ce secteur est situé à l'ouest de la commune de Texenna.</p>
+                            <span class="map-link-btn">Voir sur la carte →</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Steps (Stations d'Épuration / STEP) Section -->
+        <section id="steps" class="steps-section">
+            <div class="section-container">
+                <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+                    <span class="section-subtitle">Traitement et Épuration</span>
+                    <h2 class="section-title">Les Stations d'Épuration (STEP)</h2>
+                    <div class="title-underline"></div>
+                </div>
+                
+                <div class="steps-grid">
+                    <a href="https://maps.app.goo.gl/VhAoHn2Ep1Woy1zL7" target="_blank" rel="noopener" class="step-card" data-aos="fade-right" data-aos-duration="1200">
+                        <div class="step-badge">Usine</div>
+                        <h3 class="step-title">STEP "JIJEL"</h3>
+                        <p class="step-desc">Station principale de traitement des eaux de la commune de Jijel.</p>
+                        <span class="btn-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Localiser la station
+                        </span>
+                    </a>
+
+                    <a href="https://maps.app.goo.gl/AKh6Q9vacH4y5ubDA" target="_blank" rel="noopener" class="step-card" data-aos="fade-left" data-aos-duration="1200">
+                        <div class="step-badge">Usine</div>
+                        <h3 class="step-title">STEP "EL MILIA"</h3>
+                        <p class="step-desc">Station industrielle moderne de traitement de la zone d'El Milia.</p>
+                        <span class="btn-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Localiser la station
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stations de Relevage Section -->
+        <section id="stations" class="stations-section">
+            <div class="section-container">
+                <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+                    <span class="section-subtitle">Réseau de Pompage</span>
+                    <h2 class="section-title">Les Stations de Relevage</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="stations-badge-grid" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="station-badge-item">EL AOUANA</div>
+                    <div class="station-badge-item">RENIGHDA</div>
+                    <div class="station-badge-item">BOUDJLIDA</div>
+                    <div class="station-badge-item">RESEVAFIA</div>
+                    <div class="station-badge-item">OULED BOUNAR</div>
+                    <div class="station-badge-item">EL ARAICHE</div>
+                    <div class="station-badge-item">RABTA</div>
+                    <div class="station-badge-item">PECHENIE</div>
+                    <div class="station-badge-item">PLAGE</div>
+                    <div class="station-badge-item">TEXANA</div>
+                    <div class="station-badge-item">EL MILIA</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="main-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="logo-area">
+                        <img src="ONA.jpg" alt="ONA Logo" class="logo-img">
+                        <span class="logo-text">ONA JIJEL</span>
+                    </div>
+                    <p class="footer-brand-desc">
+                        Office National de l'Assainissement - Agence de la Wilaya de Jijel. Protéger notre ressource, assainir notre avenir.
+                    </p>
+                </div>
+                
+                <div class="footer-links" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <h4 class="footer-title">Plan du site</h4>
+                    <ul>
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#services">Nos Services</a></li>
+                        <li><a href="#centres">Centres d'Assainissement</a></li>
+                        <li><a href="#stations">Stations & Réseaux</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <h4 class="footer-title">Contact & Support</h4>
+                    <div class="contact-methods">
+                        <a href="mailto:bouakrifkhalil805@gmail.com" class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span class="contact-val">bouakrifkhalil805@gmail.com</span>
+                        </a>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <span class="contact-val">0552453965 (WhatsApp)</span>
+                        </div>
+                    </div>
+                    <div class="social-networks">
+                        <a href="https://www.facebook.com/OnaJijel?mibextid=rS40aB7S9Ucbxw6v" target="_blank" rel="noopener" class="social-btn facebook" aria-label="Facebook">
+                            <img src="facebook.png" alt="Facebook">
+                        </a>
+                        <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fona.officiel%3Figsh%3DMTZ0Ym1iZWM4cWJmcg%253D%253D%26fbclid%3DIwZXh0bgNhZW0CMTAAAR0_66AJ6ssgmuKI7--4sYAluMnB7Km3p6Tp9L0Paem641D_Mw6sfVVUq4E_aem_WrnVhmcBSBVLVHmcOtTKFw&h=AT0gFvRxh4FoLC-Kkwch3FPsvxvMBnKNBybUxgwYWhvyay8W96Y9Yo7EhX6cZM6EhBN_a7qz7eCOEXG52YnaRQDgHNOieiSjQJohGXJbLhX33Nw9H7bZhMwcgo18dwtAaJmZjQ" target="_blank" rel="noopener" class="social-btn instagram" aria-label="Instagram">
+                            <img src="instagram.png" alt="Instagram">
+                        </a>
+                        <a href="mailto:bouakrifkhalil805@gmail.com" class="social-btn email" aria-label="Email">
+                            <img src="email.png" alt="Email">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Office National de l'Assainissement - JIJEL. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="home.js"></script>
+    <script src="aos/aos.js"></script>
+    <script>
+        // Init AOS animations when DOM is ready
+        document.addEventListener('DOMContentLoaded', () => {
+            AOS.init({
+                duration: 900,
+                easing: 'ease-in-out',
+                once: true
+            });
+        });
+    </script>
+</body>
+</html>
